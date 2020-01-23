@@ -15,7 +15,7 @@ services:
     ports: ['80:80'] 
   db:
     container_name: db
-    image: mongo:4.0
+    image: mongo:4.1
     restart: always
   frontend:
     container_name: frontend
