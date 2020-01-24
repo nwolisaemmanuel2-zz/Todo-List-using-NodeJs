@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   }).catch((error) => console.log(error));
 });
 
-// add a todo item
+// add a todo items
 app.post('/', (req, res) => {
   const { name } = req.body;
   repository.create(name).then((todo) => {
@@ -18,7 +18,7 @@ app.post('/', (req, res) => {
   }).catch((error) => console.log(error));
 });
 
-// delete a todo item
+// delete a todo items
 app.delete('/:id', (req, res) => {
   const { id } = req.params;
   repository.deleteById(id).then((ok) => {
@@ -28,7 +28,7 @@ app.delete('/:id', (req, res) => {
   }).catch((error) => console.log(error));
 });
 
-// update a todo item
+// updates a todo item
 app.put('/:id', (req, res) => {
   const { id } = req.params;
   const todo = { name: req.body.name, done: req.body.done };
