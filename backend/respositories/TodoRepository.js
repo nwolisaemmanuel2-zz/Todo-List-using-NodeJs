@@ -9,7 +9,7 @@ class TodoRepository {
   }
 
   /**
-   * @param {String} name
+   * @param {String} names
    */
   create(name) {
     const newTodo = { name, done: false };
@@ -40,7 +40,7 @@ class TodoRepository {
   /**
    *
    * @param {integer} id
-   * @param {*} object
+   * @param {*} objects
    */
   updateById(id, object) {
     const query = { _id: id };
