@@ -1,4 +1,5 @@
 ## Project setup
+
 This app contains both the backend and the frontend in a single repository.
 ```	
 ├── Readme.md
